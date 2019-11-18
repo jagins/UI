@@ -1,0 +1,67 @@
+nav {
+
+    height: 55px;
+    display: flex;
+    width: calc(100%);
+    background: #292626;
+    padding: 5px 0px 5px 0px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px black;
+
+    #width-manager {
+
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        img { width: 125px; }
+    
+        div {
+    
+            display: flex;
+            width: calc(70%);
+            align-items: center;
+            justify-content: space-between;
+    
+            a {
+        
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+        
+            }
+
+            .hover-container {
+
+                display: flex;
+                width: fit-content;
+                flex-direction: column;
+
+                hr { 
+
+                    width: 0px; 
+                    visibility: hidden;
+                    transition: width .1s ease-in-out;
+
+                }
+
+            }
+
+            .hover-container:hover > hr {
+
+                width: 110%;
+                visibility: visible;
+
+            }
+    
+        }
+
+    }
+
+    @media @mobile {
+
+        
+
+    }
+
+}
