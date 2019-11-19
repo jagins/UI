@@ -16,6 +16,9 @@ nav {
   justify-content: space-around;
   box-shadow: 0px 0px 10px 0px black;
 }
+nav #mobile-menu-toggle {
+  display: none;
+}
 nav #width-manager {
   width: 90%;
   display: flex;
@@ -49,6 +52,68 @@ nav #width-manager div .hover-container:hover > hr {
   width: 110%;
   visibility: visible;
 }
+nav #mobile-bar {
+  display: none;
+}
+@media (max-width: 500px) {
+  nav #mobile-menu-toggle {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 7.5px 0px 0px 0px;
+  }
+  nav #width-manager {
+    display: none;
+  }
+  nav #mobile-bar {
+    width: 90%;
+    height: 100%;
+    display: flex;
+  }
+  nav #mobile-bar div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 50px);
+  }
+  nav #mobile-bar div img {
+    width: 125px;
+  }
+}
+#mobile-nav-wrapper {
+  top: 65px;
+  z-index: 2;
+  width: 100%;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  transition: height 0.1s ease-in-out;
+}
+@media (max-width: 500px) {
+  .darker {
+    background: #504C4C;
+  }
+  .lighter {
+    background: #7E7777;
+  }
+  li {
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 5px 0px 5px 5px;
+    justify-content: flex-start;
+  }
+  li img {
+    width: 30px;
+    margin: 5px;
+  }
+  li p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}
 #wrapper {
   width: 90%;
   display: flex;
@@ -57,6 +122,11 @@ nav #width-manager div .hover-container:hover > hr {
   flex-direction: column;
   min-height: calc(100% - 65px);
   box-shadow: -15px 0 2px -15px inset, 15px 0 2px -15px inset;
+}
+@media (max-width: 500px) {
+  #wrapper {
+    width: 100%;
+  }
 }
 #wrapper header {
   height: 300px;
@@ -89,6 +159,11 @@ nav #width-manager div .hover-container:hover > hr {
   font-weight: bold;
   margin: 5px 0px 20px 0px;
 }
+@media (max-width: 500px) {
+  #wrapper header #header-content p {
+    font-size: 20px;
+  }
+}
 #wrapper header #header-content #button-container {
   width: 120px;
   padding: 10px;
@@ -119,9 +194,19 @@ nav #width-manager div .hover-container:hover > hr {
   font-size: 30px;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  #wrapper .content-section h1 {
+    font-size: 30px;
+  }
+}
 #wrapper .content-section p {
   width: 80%;
   font-size: 20px;
+}
+@media (max-width: 500px) {
+  #wrapper .content-section p {
+    width: 50%;
+  }
 }
 #wrapper #content-section-a {
   position: relative;
@@ -164,12 +249,38 @@ nav #width-manager div .hover-container:hover > hr {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  #wrapper #content-section-b div h1 {
+    margin: 5px 0px 0px 5px;
+  }
+}
 #wrapper #content-section-b div p {
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #wrapper #content-section-b div p {
+    width: 50%;
+    margin: 0 5px;
+  }
+}
+@media (max-width: 500px) {
+  #wrapper #content-section-b div {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: -245px;
+  }
 }
 #wrapper #content-section-b img {
   width: 100%;
   height: 550px;
+}
+@media (max-width: 500px) {
+  #wrapper #content-section-b img {
+    height: 300px;
+  }
 }
 footer {
   height: 150px;
@@ -199,6 +310,21 @@ footer #social-links img {
   margin: 10px;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  footer #social-links {
+    width: 50%;
+    flex-direction: row;
+  }
+  footer #social-links h1 {
+    display: none;
+  }
+  footer #social-links hr {
+    display: none;
+  }
+  footer #social-links img {
+    margin: 0px;
+  }
+}
 footer #other-links {
   width: 20%;
   height: 100%;
@@ -213,7 +339,22 @@ footer #other-links a {
   margin: 5px 0px;
   text-decoration: none;
 }
-footer img {
+@media (max-width: 500px) {
+  footer #other-links {
+    width: 50%;
+  }
+}
+footer #lambda-logo {
   width: 250px;
   height: 75px;
+}
+@media (max-width: 500px) {
+  footer #lambda-logo {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    height: 200px;
+  }
 }

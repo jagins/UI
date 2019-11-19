@@ -29,6 +29,19 @@ footer {
         
         }
 
+        @media @mobile {
+
+            width: 50%;
+            flex-direction: row;
+
+            h1 { display: none; }
+
+            hr { display: none; }
+
+            img { margin: 0px; }
+
+        }
+
     }
 
     #other-links {
@@ -49,13 +62,19 @@ footer {
 
         }
 
+        @media @mobile { width: 50%; }
+
     }
 
-    img {
+    #lambda-logo {
 
         width: 250px;
         height: 75px;
 
+        @media @mobile { display: none; }
+
     }
+
+    @media @mobile { height: 200px; }
 
 }

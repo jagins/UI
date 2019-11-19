@@ -22,7 +22,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <script src='scripts/global.js'></script>
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+  <script src='scripts/index.js'></script>
   <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet" />
   <title>Lendr</title>
   <link rel='stylesheet' href='styles/core.css'>
@@ -31,6 +32,14 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id='root'>
+    <div id='mobile-nav-wrapper' onclick='toggleMenu();'>
+      <ul>
+        <li class='darker'><img src='rsc/Home-Button-White.png' /><p>Home</p></li>
+        <li class='lighter'><img src='rsc/search-icon-white.png' /><p>Browse</p></li>
+        <li class='darker'><img src='rsc/Trading-White.png' /><p>Lend</p></li>
+        <li class='lighter'><img src='rsc/login_button_white.png' /><p>Login</p></li>
+      </ul>
+    </div>
     <nav>
       <div id='width-manager'>
         <img src='rsc/lendr-logo-inversed.png' alt='Lendr Logo'>
@@ -51,6 +60,12 @@
             <a href='login.html'>Login</a>
             <hr class='link-underline'>
           </div>
+        </div>
+      </div>
+      <div id='mobile-bar'>
+        <img id='mobile-menu-toggle' src='rsc/menu-icon-white.png' />
+        <div>
+          <img src='rsc/lendr-logo-inversed.png' alt='Lendr Logo'>
         </div>
       </div>
     </nav>
@@ -107,7 +122,7 @@
       <a href=''>Privacy policy</a>
       <a href=''>Terms and Conditions</a>
     </section>
-    <img src='rsc/lambda-logo.png' alt='Lambda Logo' />
+    <img id='lambda-logo' src='rsc/lambda-logo.png' alt='Lambda Logo' />
   </footer>
   <!--
       This HTML file is a template.
