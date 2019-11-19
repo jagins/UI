@@ -1,0 +1,149 @@
+nav {
+
+    height: 55px;
+    display: flex;
+    width: calc(100%);
+    background: #292626;
+    padding: 5px 0px 5px 0px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px black;
+
+    #mobile-menu-toggle { display: none; }
+
+    #width-manager {
+
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        img { width: 125px; }
+    
+        div {
+    
+            display: flex;
+            width: calc(70%);
+            align-items: center;
+            justify-content: space-between;
+    
+            a {
+        
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+        
+            }
+
+            .hover-container {
+
+                display: flex;
+                width: fit-content;
+                flex-direction: column;
+
+                hr { 
+
+                    width: 0px; 
+                    visibility: hidden;
+                    transition: width .1s ease-in-out;
+
+                }
+
+            }
+
+            .hover-container:hover > hr {
+
+                width: 110%;
+                visibility: visible;
+
+            }
+    
+        }
+
+    }
+
+    #mobile-bar { display: none; }
+
+    @media @mobile {
+
+        #mobile-menu-toggle {
+
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: 7.5px 0px 0px 0px;
+
+        }
+
+        #width-manager { display: none; }
+
+        #mobile-bar {
+
+            width: 90%;
+            height: 100%;
+            display: flex;
+
+            div {
+
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                width: calc(100% - 50px);
+
+                img {
+
+                    width: 125px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+#mobile-nav-wrapper {
+
+    top: 65px;
+    z-index: 2;
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    overflow: hidden;
+    transition: height .1s ease-in-out;
+
+}
+
+@media @mobile {
+
+    .darker { background: #504C4C; }
+
+    .lighter { background: #7E7777; }
+
+    li {
+
+        width: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 5px 0px 5px 5px;
+        justify-content: flex-start;
+
+        img { 
+
+            width: 30px;
+            margin: 5px;
+
+        }
+
+        p {
+
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+
+        }
+
+    }
+
+}
