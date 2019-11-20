@@ -10,6 +10,7 @@
         width: 100%;
         justify-content: space-evenly;
     }
+
     .box
     {
         border: 1px solid @colorBlack;
@@ -21,6 +22,11 @@
         @media @tablet
         {
             width: 35%;
+        }
+
+        @media @mobile
+        {
+            width: 40%;
         }
         
         img
@@ -47,6 +53,11 @@
         {
             .Box(@colorGreen, @colorGreen, 30%, @colorWhite);
             text-align: center;
+
+            @media @mobile
+            {
+                .Box(@colorGreen, @colorGreen, 50%, @colorWhite);
+            }
         }
 
     }//box ends

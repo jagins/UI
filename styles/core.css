@@ -306,6 +306,11 @@ nav #mobile-bar {
     width: 35%;
   }
 }
+@media (max-width: 500px) {
+  .boxHolder .box {
+    width: 40%;
+  }
+}
 .boxHolder .box img {
   width: 90%;
   margin-top: 5%;
@@ -329,6 +334,14 @@ nav #mobile-bar {
   width: 30%;
   color: white;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .boxHolder .box .pricebox {
+    border: 1px solid green;
+    background: green;
+    width: 50%;
+    color: white;
+  }
 }
 footer {
   height: 150px;
