@@ -282,15 +282,31 @@ nav #mobile-bar {
     height: 300px;
   }
 }
+.boxHolder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+}
 .boxHolder .box {
   border: 1px solid black;
-  width: 10%;
-  margin: 0 auto;
+  width: 20%;
+  height: 10%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 3%;
 }
 .boxHolder .box img {
-  width: 75%;
-  height: 75%;
-  border: 2px solid pink;
+  background: url(../rsc/placeholderBox.jpg);
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.boxHolder .box p {
+  padding: 3%;
+  font-size: 1.5rem;
 }
 footer {
   height: 150px;

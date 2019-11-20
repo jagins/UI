@@ -1,16 +1,34 @@
 .boxHolder
 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
     .box
     {
         border: 1px solid black;
-        width: 10%;
-        margin: 0 auto;
+        width: 20%;
+        height: 10%;
+        //margin: 0 auto;
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
         img
         {
-            width: 75%;
-            height: 75%;
-            border: 2px solid pink;
-            
+            background: url(../rsc/placeholderBox.jpg);
+            width: 90%;
+            //border: 2px solid pink;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
         }
-    }
-}
+
+        p
+        {
+            padding: 3%;
+            font-size: 1.5rem;
+        }
+
+    }//box ends
+}//boxerHolder ends
