@@ -21,7 +21,7 @@
 
         @media @tablet
         {
-            width: 35%;
+            width: 36%;
         }
 
         @media @mobile
@@ -53,10 +53,21 @@
         {
             .Box(@colorGreen, @colorGreen, 30%, @colorWhite);
             text-align: center;
-
+            display:inline-block;
             @media @mobile
             {
                 .Box(@colorGreen, @colorGreen, 50%, @colorWhite);
+            }
+        }
+
+        .username
+        {
+            //float: right;
+            font-size: 1.3rem;
+
+            @media @mobile
+            {
+                font-size: 1rem;
             }
         }
 

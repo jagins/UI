@@ -303,7 +303,7 @@ nav #mobile-bar {
 }
 @media (max-width: 800px) {
   .boxHolder .box {
-    width: 35%;
+    width: 36%;
   }
 }
 @media (max-width: 500px) {
@@ -334,6 +334,7 @@ nav #mobile-bar {
   width: 30%;
   color: white;
   text-align: center;
+  display: inline-block;
 }
 @media (max-width: 500px) {
   .boxHolder .box .pricebox {
@@ -341,6 +342,14 @@ nav #mobile-bar {
     background: green;
     width: 50%;
     color: white;
+  }
+}
+.boxHolder .box .username {
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .boxHolder .box .username {
+    font-size: 1rem;
   }
 }
 footer {
