@@ -288,28 +288,12 @@ nav #mobile-bar {
   flex-wrap: wrap;
   width: 90%;
 }
-@media (max-width: 800px) {
-  .boxHolder {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-}
 .boxHolder .box {
   border: 1px solid black;
   width: 20%;
   margin-top: 3%;
   margin-left: 3%;
   margin-bottom: 3%;
-}
-@media (max-width: 800px) {
-  .boxHolder .box {
-    width: 36%;
-  }
-}
-@media (max-width: 500px) {
-  .boxHolder .box {
-    width: 40%;
-  }
 }
 .boxHolder .box img {
   width: 90%;
@@ -334,22 +318,13 @@ nav #mobile-bar {
   width: 30%;
   color: white;
   text-align: center;
-  display: inline-block;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .boxHolder .box .pricebox {
     border: 1px solid green;
     background: green;
     width: 50%;
     color: white;
-  }
-}
-.boxHolder .box .username {
-  font-size: 1.3rem;
-}
-@media (max-width: 500px) {
-  .boxHolder .box .username {
-    font-size: 1rem;
   }
 }
 footer {
