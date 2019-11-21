@@ -1,0 +1,88 @@
+.background
+{
+    section
+    {   
+        div
+        {
+            h1
+            {
+                text-align: center;
+                margin: 2%;
+                font-size: @headerFont;
+            }
+
+            .login
+            {
+                text-align: center;
+                margin-top: 2%;
+
+                .userText
+                {
+                    font-size: @textFontSize;
+                }
+                
+                .userName
+                {
+                    margin-top: 0.5%;
+                    font-size: @textFontSize;
+                }
+
+                .passText
+                {
+                    margin-top: 1%;
+                    font-size: @textFontSize;
+                }
+
+                .password
+                {
+                    margin-top: 0.5%;
+                    font-size: @textFontSize;
+                }
+            }//end of login
+        }//end of div
+        .btnGroup
+        {
+            .btn
+            {
+                .button(7%, 1%, @silver);
+
+                @media @mobile
+                {
+                    .button(20%, 5%, @silver);
+                    margin-top: 10%;
+                }
+
+                @media @tablet
+                {
+                    .button(25%, 3%, @silver);
+                    margin-top: 5%;
+                }
+
+                &:hover
+                {
+                    cursor: pointer;
+                }
+            }//end of button
+
+            @media @mobile
+            {
+                margin-top: 10%;
+            }
+        }//end of btnGroup
+    } //end of section
+
+    footer
+    {
+        margin-top: 13%;
+
+        @media @tablet
+        {
+            margin-top: 25%;
+        }
+
+        @media @mobile
+        {
+            margin-top: 42%;
+        }
+    }
+}//end of body

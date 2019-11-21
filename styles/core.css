@@ -352,6 +352,90 @@ nav #mobile-bar {
     font-size: 1rem;
   }
 }
+.background section div h1 {
+  text-align: center;
+  margin: 2%;
+  font-size: 2.5rem;
+}
+.background section div .login {
+  text-align: center;
+  margin-top: 2%;
+}
+.background section div .login .userText {
+  font-size: 1.5rem;
+}
+.background section div .login .userName {
+  margin-top: 0.5%;
+  font-size: 1.5rem;
+}
+.background section div .login .passText {
+  margin-top: 1%;
+  font-size: 1.5rem;
+}
+.background section div .login .password {
+  margin-top: 0.5%;
+  font-size: 1.5rem;
+}
+.background section .btnGroup .btn {
+  border: 1px solid black;
+  width: 7%;
+  padding: 1%;
+  background-color: silver;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .background section .btnGroup .btn {
+    border: 1px solid black;
+    width: 20%;
+    padding: 5%;
+    background-color: silver;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .background section .btnGroup .btn {
+    border: 1px solid black;
+    width: 25%;
+    padding: 3%;
+    background-color: silver;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+}
+.background section .btnGroup .btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .background section .btnGroup {
+    margin-top: 10%;
+  }
+}
+.background footer {
+  margin-top: 13%;
+}
+@media (max-width: 800px) {
+  .background footer {
+    margin-top: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .background footer {
+    margin-top: 42%;
+  }
+}
 footer {
   height: 150px;
   display: flex;
